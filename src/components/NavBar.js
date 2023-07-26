@@ -1,23 +1,21 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <div
-      style={{
-        borderBottom: "2px solid black",
-        paddingBottom: "10px",
-        marginBottom: "12px",
-      }}
-    >
-      <NavLink style={{ marginRight: "10px" }} to="/">
-        Home
-      </NavLink>
-      <NavLink style={{ marginRight: "10px" }} to="/movies">
-        Movies
-      </NavLink>
-    </div>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/movies">Movies</Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
 export default NavBar;
+
+
